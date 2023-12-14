@@ -19,7 +19,6 @@ const loginUser = async (req, res) => {
       key: key,
     });
   } catch (error) {
-    // create log
     result = helper.createResponse(
       error.statusCode,
       "Internal Server Error",
